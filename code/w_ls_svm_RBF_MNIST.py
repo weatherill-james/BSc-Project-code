@@ -44,10 +44,10 @@ def new_v_inv(matrix, alpha, w_0, y_vec, delta):
 assets_path = os.path.join(os.getcwd(), "..", "assets")
 
 # Number of training points
-n = 30_000
+n = 2_000
 
 # Setting our parameters for our wLS-SVM model
-gamma = 0.0185
+gamma = 0.0190
 lamb = 0.0001
 delta = 1e-6
 epsilon = 1e-10
@@ -119,19 +119,19 @@ for digit in range(10):
 
 ########################################
 
-# # We save the values computed during training, which we can load into a file and use for predictions without needing to retrain
-# # Only uncomment when wanting to save a new model, and ensure to update the filename
+# We save the values computed during training, which we can load into a file and use for predictions without needing to retrain
+# Only uncomment when wanting to save a new model, and ensure to update the filename
 
-# # Saving each alpha vector and w0 value into a matrix and vector, respectively, so NumPy can save them (NumPy can ONLY save arrays)
-# alphas_matrix = np.array([alphas[i] for i in range(10)])
-# w0s_vector    = np.array([w0s[i] for i in range(10)])
+# Saving each alpha vector and w0 value into a matrix and vector, respectively, so NumPy can save them (NumPy can ONLY save arrays)
+alphas_matrix = np.array([alphas[i] for i in range(10)])
+w0s_vector    = np.array([w0s[i] for i in range(10)])
 
-# np.savez(os.path.join(assets_path, "wlssvm_model_30k.npz"),
-#          X_training = X,
-#          alphas     = alphas_matrix,
-#          w0s        = w0s_vector,
-#          # Converting gamma into a 1-element array, so that NumPy can save it
-#          gamma      = np.array([gamma]))
+np.savez(os.path.join(assets_path, "wlssvm_model_2k.npz"),
+         X_training = np.array(X, dtype = np.float64),
+         alphas     = np.array(alphas_matrix, dtype = np.float64),
+         w0s        = np.array(w0s_vector, dtype = np.float64),
+         # Converting gamma into a 1-element array, so that NumPy can save it
+         gamma      = np.array([gamma], dtype = np.float64))
 
 ########################################
 
