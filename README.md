@@ -1,7 +1,7 @@
 # Understanding Machine Learning: The Mathematical Structure of Least-Squares Support Vector Machines
 
 As part of my 3rd Year of my Mathematics BSc Hons, I was able to do a BSc Project
-in any mathematical field of my choosing. I have chosen to dive deeper into the mathematics of
+in any mathematical field of my choosing. I chose to dive deeper into the mathematics of
 machine learning, and specifically, least-square support vector machines (LS-SVMs).
 
 ## Overview
