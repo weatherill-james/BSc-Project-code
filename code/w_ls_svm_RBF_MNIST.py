@@ -127,11 +127,11 @@ alphas_matrix = np.array([alphas[i] for i in range(10)])
 w0s_vector    = np.array([w0s[i] for i in range(10)])
 
 np.savez(os.path.join(assets_path, "wlssvm_model_2k.npz"),
-         X_training = np.array(X, dtype = np.float64),
-         alphas     = np.array(alphas_matrix, dtype = np.float64),
-         w0s        = np.array(w0s_vector, dtype = np.float64),
+         X_training = X,
+         alphas     = alphas_matrix,
+         w0s        = w0s_vector,
          # Converting gamma into a 1-element array, so that NumPy can save it
-         gamma      = np.array([gamma], dtype = np.float64))
+         gamma      = np.array([gamma]))
 
 ########################################
 
