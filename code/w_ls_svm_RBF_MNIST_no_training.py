@@ -26,7 +26,7 @@ def k_func(new_X, data_X, gamma):
 
 ########################################
 
-assets_path = os.path.join(os.getcwd(), "..", "assets")
+assets_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets")
 
 # We load our npz file, which contains the training data, alphas, w0s, and gamma value. This is everything we need to make predictions
 # Change the filename here (e.g. to "wlssvm_model_15k.npz") to load a different model

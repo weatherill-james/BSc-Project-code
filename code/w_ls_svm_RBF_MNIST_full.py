@@ -32,7 +32,7 @@ def new_v_inv(matrix, alpha, w_0, y_vec, delta):
 
 # Training the wLS-SVM model
 
-assets_path = os.path.join(os.getcwd(), "..", "assets")
+assets_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets")
 
 n = 60_000
 

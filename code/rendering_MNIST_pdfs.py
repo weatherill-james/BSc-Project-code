@@ -35,7 +35,7 @@ def get_samples(X, y, classes, n = 5):
 
 # Grabbing the MNIST data and labels
 
-assets_path = os.path.join(os.getcwd(), "..", "assets")
+assets_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets")
 latex_assets_path = os.path.join(os.getcwd(), "..", "..", "LaTeX", "Dissertation_JWeatherill", "inputs", "assets")
 
 X_training = parse_data(os.path.join(assets_path, "MNIST_training_data_60k.gz"))

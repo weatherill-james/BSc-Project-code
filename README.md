@@ -32,7 +32,6 @@ machine learning, and specifically, least-square support vector machines (LS-SVM
   - **w_ls_SVM_RBF_MNIST.py** - Multi-class RBF wLS-SVM on tunable subsets of the MNIST dataset
   - **w_ls_SVM_RBF_MNIST_full.py** - Multi-class RBF wLS-SVM on the full MNIST training set
   - **w_ls_SVM_RBF_MNIST_no_training.py** - A file to run different saved models of the multi-class RBF wLS-SVM for different sized training sets
-  - **rendering_MNIST_pdfs.py** - Rendering some MNIST dataset images using Matplotlib
 - `assets/` — MNIST data files and saved models
   - **MNIST_testing_data_10k.gz** - Lossless compressed gzip file of the 10,000 MNIST testing points
   - **MNIST_testing_labels_10k.gz** - gzip file for the 10,000 MNIST testing points' class labels
