@@ -29,6 +29,7 @@ def k_func(new_X, data_X, gamma):
 assets_path = os.path.join(os.getcwd(), "..", "assets")
 
 # We load our npz file, which contains the training data, alphas, w0s, and gamma value. This is everything we need to make predictions
+# Change the filename here (e.g. to "wlssvm_model_15k.npz") to load a different model
 model = np.load(os.path.join(assets_path, "wlssvm_model_60k.npz"))
 
 # This is how we extract the data from the npz file
