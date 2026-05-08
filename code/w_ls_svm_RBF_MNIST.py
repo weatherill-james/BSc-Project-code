@@ -41,7 +41,7 @@ def new_v_inv(matrix, alpha, w_0, y_vec, delta):
 
 # Training the wLS-SVM model
 
-# This is the path to the "assets" folder, which is where our MNIST data files are
+# This is the path to the "assets" folder, which is where our MNIST files are
 assets_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets")
 
 # Number of training points
