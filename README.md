@@ -55,7 +55,7 @@ Python 3.x, NumPy
 
 <ins>Clone</ins> this repository.
 
-Do not use "Download ZIP". Some `.npz` files are large and are committed using Git's "large file storage" (LFS):
+Do not use "Download ZIP". Some `.npz` files are large and are committed using Git's "large file storage" (LFS), which require `git clone` to be downloaded correctly.
 ```bash
 git clone https://github.com/James-Weatherill/BSc-Project-code.git
 cd BSc-Project-code
