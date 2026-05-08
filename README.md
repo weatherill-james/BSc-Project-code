@@ -25,27 +25,27 @@ machine learning, and specifically, least-square support vector machines (LS-SVM
 ## Structure
 
 - `code/` — training and evaluation code files
-  - kernel_ridge_regression.py - Implementation of KRR using made-up data
-  - ls_svm_bullseye.py - Implementation of LS-SVM on made-up bullseye dataset
-  - ls_svm_messy_data.py - LS-SVM on made-up data with extreme outliers (to compare to wLS-SVM on same data)
-  - w_ls_svm_messy_data.py - wLS-SVM on made-up data with extreme outliers (to compare to LS-SVM on same data)
-  - w_ls_SVM_RBF_MNIST.py - Multi-class RBF wLS-SVM on tunable subsets of the MNIST dataset
-  - w_ls_SVM_RBF_MNIST_full.py - Multi-class RBF wLS-SVM on the full MNIST training set
-  - w_ls_SVM_RBF_MNIST_no_training.py - A file to run different saved models of the multi-class RBF wLS-SVM for different sized training sets
-  - rendering_MNIST_pdfs.py - Rendering some MNIST dataset images using Matplotlib
+  - **kernel_ridge_regression.py** - Implementation of KRR using made-up data
+  - **ls_svm_bullseye.py** - Implementation of LS-SVM on made-up bullseye dataset
+  - **ls_svm_messy_data.py** - LS-SVM on made-up data with extreme outliers (to compare to wLS-SVM on same data)
+  - **w_ls_svm_messy_data.py** - wLS-SVM on made-up data with extreme outliers (to compare to LS-SVM on same data)
+  - **w_ls_SVM_RBF_MNIST.py** - Multi-class RBF wLS-SVM on tunable subsets of the MNIST dataset
+  - **w_ls_SVM_RBF_MNIST_full.py** - Multi-class RBF wLS-SVM on the full MNIST training set
+  - **w_ls_SVM_RBF_MNIST_no_training.py** - A file to run different saved models of the multi-class RBF wLS-SVM for different sized training sets
+  - **rendering_MNIST_pdfs.py** - Rendering some MNIST dataset images using Matplotlib
 - `assets/` — MNIST data files and saved models
-  - MNIST_testing_data_10k.gz - Lossless compressed gzip file of the 10,000 MNIST testing points
-  - MNIST_testing_labels_10k.gz - Lossless compressed gzip file for the 10,000 MNIST testing points' class labels
-  - MNIST_training_data_60k.gz - Lossless compressed gzip file for the 60,000 MNIST training points
-  - MNIST_training_labels_60k.gz - Lossless compressed gzip file for the 60,000 MNIST training points' class labels
-  - wlssvm_model_1k.npz - Saved NumPy arrays, created by training on 1,000 MNIST training points
-  - wlssvm_model_2k.npz - Saved NumPy arrays, created by training on 2,000 MNIST training points
-  - wlssvm_model_5k.npz - Saved NumPy arrays, created by training on 5,000 MNIST training points
-  - wlssvm_model_7o5k.npz - Saved NumPy arrays, created by training on 7,500 MNIST training points
-  - wlssvm_model_10k.npz - Saved NumPy arrays, created by training on 10,000 MNIST training points
-  - wlssvm_model_15k.npz - Saved NumPy arrays, created by training on 15,000 MNIST training points
-  - wlssvm_model_30k.npz - Saved NumPy arrays, created by training on 30,000 MNIST training points
-  - wlssvm_model_60k.npz - Saved NumPy arrays, created by training on the full 60,000 MNIST training points
+  - **MNIST_testing_data_10k.gz** - Lossless compressed gzip file of the 10,000 MNIST testing points
+  - **MNIST_testing_labels_10k.gz** - gzip file for the 10,000 MNIST testing points' class labels
+  - **MNIST_training_data_60k.gz** - gzip file for the 60,000 MNIST training points
+  - **MNIST_training_labels_60k.gz** - gzip file for the 60,000 MNIST training points' class labels
+  - **wlssvm_model_1k.npz** - Saved NumPy arrays, created by training on 1,000 MNIST training points
+  - **wlssvm_model_2k.npz** - Saved NumPy arrays, 2,000 MNIST training points
+  - **wlssvm_model_5k.npz** - Saved NumPy arrays, 5,000 MNIST training points
+  - **wlssvm_model_7o5k.npz** - Saved NumPy arrays, 7,500 MNIST training points
+  - **wlssvm_model_10k.npz** - Saved NumPy arrays, 10,000 MNIST training points
+  - **wlssvm_model_15k.npz** - Saved NumPy arrays, 15,000 MNIST training points
+  - **wlssvm_model_30k.npz** - Saved NumPy arrays, 30,000 MNIST training points
+  - **wlssvm_model_60k.npz** - Saved NumPy arrays, the full 60,000 MNIST training points
 
 ## Requirements
 
@@ -55,7 +55,7 @@ Python 3.x, NumPy
 
 <ins>Clone</ins> this repository (do not use "Download ZIP" — LFS files will not download correctly):
 ```bash
-git clone https://github.com/James-Weatherill/BSc-Project-code/tree/main
+git clone https://github.com/James-Weatherill/BSc-Project-code.git
 cd BSc-Project-code
 git lfs install
 git lfs pull
