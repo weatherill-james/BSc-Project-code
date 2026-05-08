@@ -53,7 +53,7 @@ Python 3.x, NumPy
 
 ## Installation
 
-<ins>Clone</ins> this repository (do not use "Download ZIP" — LFS files will not download correctly):
+<ins>Clone</ins> this repository (do not use "Download ZIP", since some `.npz` files are large and are committed using Git's "large file storage" (LFS). "Download ZIP" will not download them correctly):
 ```bash
 git clone https://github.com/James-Weatherill/BSc-Project-code.git
 cd BSc-Project-code
