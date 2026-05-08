@@ -27,8 +27,8 @@ machine learning, and specifically, least-square support vector machines (LS-SVM
 - `code/` — training and evaluation code files
   - **kernel_ridge_regression.py** - Implementation of KRR using made-up data
   - **ls_svm_bullseye.py** - Implementation of LS-SVM on made-up bullseye dataset
-  - **ls_svm_messy_data.py** - LS-SVM on made-up data with extreme outliers (to compare to wLS-SVM on same data)
-  - **w_ls_svm_messy_data.py** - wLS-SVM on made-up data with extreme outliers (to compare to LS-SVM on same data)
+  - **ls_svm_outlier_data.py** - LS-SVM on made-up data with extreme outliers (to compare to wLS-SVM on same data)
+  - **w_ls_svm_outlier_data.py** - wLS-SVM on made-up data with extreme outliers (to compare to LS-SVM on same data)
   - **w_ls_SVM_RBF_MNIST.py** - Multi-class RBF wLS-SVM on tunable subsets of the MNIST dataset
   - **w_ls_SVM_RBF_MNIST_full.py** - Multi-class RBF wLS-SVM on the full MNIST training set
   - **w_ls_SVM_RBF_MNIST_no_training.py** - A file to run different saved models of the multi-class RBF wLS-SVM for different sized training sets
