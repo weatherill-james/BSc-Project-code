@@ -40,7 +40,7 @@ machine learning, and specifically, least-square support vector machines (LS-SVM
   - **wlssvm_model_1k.npz** - Saved NumPy arrays, created by training on 1,000 MNIST training points
   - **wlssvm_model_2k.npz** - Saved NumPy arrays, 2,000 MNIST training points
   - **wlssvm_model_5k.npz** - Saved NumPy arrays, 5,000 MNIST training points
-  - **wlssvm_model_7o5k.npz** - Saved NumPy arrays, 7,500 MNIST training points
+  - **wlssvm_model_7k5.npz** - Saved NumPy arrays, 7,500 MNIST training points
   - **wlssvm_model_10k.npz** - Saved NumPy arrays, 10,000 MNIST training points
   - **wlssvm_model_15k.npz** - Saved NumPy arrays, 15,000 MNIST training points
   - **wlssvm_model_30k.npz** - Saved NumPy arrays, 30,000 MNIST training points
