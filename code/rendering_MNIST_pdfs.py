@@ -36,7 +36,7 @@ def get_samples(X, y, classes, n = 5):
 # Grabbing the MNIST data and labels
 
 assets_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets")
-latex_assets_path = os.path.join(os.getcwd(), "..", "..", "LaTeX", "Dissertation_JWeatherill", "inputs", "assets")
+latex_assets_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "LaTeX", "Dissertation_JWeatherill", "inputs", "assets")
 
 X_training = parse_data(os.path.join(assets_path, "MNIST_training_data_60k.gz"))
 y_training = parse_labels(os.path.join(assets_path, "MNIST_training_labels_60k.gz"))
@@ -53,8 +53,12 @@ digits_and_filenames = [([0, 1, 2, 3, 4], os.path.join(latex_assets_path, "MNIST
                         ([5, 6, 7, 8, 9], os.path.join(latex_assets_path, "MNIST_training_5to9.pdf"))]
 
 # The ideal file type is PDF, since it is vector graphics, and will look good at any size
+first_subplot_images = None
 for digits, filename in digits_and_filenames:
     images, labels = get_samples(X_training, y_training, digits, n = 5)
+
+    if first_subplot_images is None:
+        first_subplot_images = images
 
     fig, axes = plt.subplots(5, 5, figsize = (5, 5))
 
@@ -64,3 +68,11 @@ for digits, filename in digits_and_filenames:
     plt.subplots_adjust(wspace = 0.05, hspace = 0.05)
     plt.savefig(filename, dpi = 300, bbox_inches = "tight")
     plt.close()
+
+image_to_show = first_subplot_images[15]
+print(image_to_show.flatten())
+
+plt.figure(figsize = (3, 3))
+plt.imshow(image_to_show, cmap = "gray", interpolation = "nearest")
+plt.axis("off")
+plt.show()
